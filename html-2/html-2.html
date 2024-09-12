@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html</title>
+  </head>
+  <body>
+    <form action="https://google.com" method="post">
+      <fieldset>
+        <legend>Pizza Order:</legend>
+        <label for="name">Your name:</label>
+        <input
+          placeholder="name"
+          type="text"
+          name="name"
+          id="name"
+          minlength="3"
+          maxlength="10"
+        />
+        <br />
+        <br />
+        <label for="email">Your email:</label>
+        <input
+          placeholder="ex@gmail.com"
+          type="email"
+          name="email"
+          id="email"
+        />
+        <br />
+        <br />
+
+        <label for="text">Topping:</label>
+        <input
+          type="radio"
+          checked
+          id="supreme"
+          value="supreme"
+          name="topping"
+        />
+        <label for="supreme">Supreme</label>
+        <input type="radio" id="vegetarian" value="vegetarian" name="topping" />
+        <label for="vegetarian">Vegetarian</label>
+        <input
+          type="radio"
+          checked
+          id="hawaian"
+          value="hawaian"
+          name="topping"
+        />
+        <label for="hawaian">Hawaian</label>
+        <br />
+        <br />
+        <label for="text">Sauce:</label>
+        <label for="selection"></label>
+        <select name="selection" id="selection">
+          <option selected value="tomato">Tomato</option>
+          <option value="garlic">Garlic</option>
+          <option value="mayonnaise">Mayonnaise</option>
+        </select>
+        <br />
+        <br />
+        <label for="text">Extras:</label>
+        <input type="checkbox" id="cheese" value="cheese" name="extra" />
+        <label for="cheese">Cheese</label>
+        <input
+          type="checkbox"
+          checked
+          id="onions"
+          value="onions"
+          name="extra"
+        />
+        <label for="onions">Onions</label>
+        <input type="checkbox" id="olives" value="olives" name="extra" />
+        <label for="olives">Olives</label>
+        <br />
+        <br />
+        <label for="text"> Quantity:</label>
+        <br />
+        <input type="number" max="7" min="1" />
+        <br />
+        <br />
+        <label for="text">Delivery instructions:</label>
+        <br />
+        <label for="description"></label>
+        <textarea name="description" id="description" rows="6" cols="60">
+        </textarea>
+        <br />
+        <br />
+
+        <label for="comments">Other comments</label>
+        <br />
+        <textarea name="comments" id="comments" rows="6" cols="60"> </textarea>
+        <br />
+        <br />
+        <label for="date">Delivery date</label>
+        <br />
+        <input
+          type="date"
+          id="date"
+          name="start"
+          value="2018-07-22"
+          min="2018-01-01"
+          max="2024-09-10"
+        />
+        <br />
+        <br />
+        <input type="reset" value="Reset order" />
+        <input type="submit" value="Send order" />
+      </fieldset>
+    </form>
+  </body>
+</html>
