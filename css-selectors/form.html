@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="https://google.com" method="post">
+      <fieldset>
+        <legend>Pizza Order:</legend>
+        <label for="name">Your name:</label>
+        <input type="text" name="name" id="name" />
+        <br />
+        <br />
+        <label for="email">Your email:</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <br />
+
+        <label for="text">Topping:</label>
+        <input type="radio" id="supreme" value="supreme" name="topping" />
+        <label for="supreme">Supreme</label>
+        <input type="radio" id="vegetarian" value="vegetarian" name="topping" />
+        <label for="vegetarian">Vegetarian</label>
+        <input type="radio" id="hawaian" value="hawaian" name="topping" />
+        <label for="hawaian">Hawaian</label>
+        <br />
+        <br />
+        <label for="text">Sauce:</label>
+        <label for="selection"></label>
+        <select name="selection" id="selection">
+          <option selected value="tomato">Tomato</option>
+          <option value="garlic">Garlic</option>
+          <option value="mayonnaise">Mayonnaise</option>
+        </select>
+        <br />
+        <br />
+        <label for="text">Extras:</label>
+        <input type="checkbox" id="cheese" value="cheese" name="extra" />
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" id="onions" value="onions" name="extra" />
+        <label for="onions">Onions</label>
+        <input type="checkbox" id="olives" value="olives" name="extra" />
+        <label for="olives">Olives</label>
+        <br />
+        <br />
+        <label for="text">Delivery instructions:</label>
+        <br />
+        <label for="description"></label>
+        <textarea name="description" id="description" rows="6" cols="60">
+        </textarea>
+        <br />
+        <br />
+        <input type="submit" value="Send order" />
+      </fieldset>
+    </form>
+  </body>
+</html>
